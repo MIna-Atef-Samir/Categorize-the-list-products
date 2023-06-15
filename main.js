@@ -1,6 +1,6 @@
 const Fetch = async () => {
     const data = await fetch('https://api.escuelajs.co/api/v1/products');
-    const Change = await fetch('http://data.fixer.io/api/latest?access_key=02cab87f61a2396af45180a0010e1424&format=1&_gl=1*18n83no*_ga*MTA5NzM0Mjc0Ny4xNjg2ODQxMzI1*_ga_HGV43FGGVM*MTY4Njg0MTMyNS4xLjEuMTY4Njg0MTU2My42MC4wLjA.')
+    const Change = await fetch('https://api.exchangerate.host/latest?base=USD')
 
     const changeCur = await Change.json();
     const parsed = await data.json();
